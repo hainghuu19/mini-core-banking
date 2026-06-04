@@ -25,8 +25,8 @@ spring:
       port: 6379
 
 jwt:
-  secret: your-256-bit-secret-key-here-change-in-production
-  access-token-expiry: 900
+  secret: ${SECRET_KEY}
+  access-token-expiry: ${EXPIRATION_TIME}
   refresh-token-expiry: 604800
 
 server:
